@@ -79,7 +79,7 @@ const scrollToSection =(id) =>{
         inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}">
       <head>
-        <title> My portfolio</title>
+        <title> My portfolio is one</title>
       </head>
       {/*bg-linear-to-bl from-blue-200 to-blue-400*/}
 
