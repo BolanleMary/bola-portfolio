@@ -14,7 +14,7 @@ function Header() {
       }
     };
     return(
-    <header className="text-slate-800 mr-6 flex items-center justify-between mt-8 pl-4 sticky top-0 z-[20] mx-auto">
+    <header className="text-slate-800 mr-6 flex items-center justify-between mt-8 pl-4 sticky z-[20] mx-auto">
      <Link to="/"><div className="pl-4 flex">
         <img src={BOLA} alt="profile picture" className="w-14 h-14" />
         <p className="font-semibold font-serif text-amber-700 italic text-4xl">
@@ -81,7 +81,7 @@ function Header() {
             </Link>*/}
             
             <button className="flex gap-1 items-center"
-            onClick={() => scrollToSection("about")}>
+            onClick={() => scrollToSection("about") } >
               <img src={AboutIcon} alt="Home Icon" className="w-7 h-7" />
               <li>About</li>
             </button>

@@ -5,12 +5,21 @@
     import BOLA from "../assets/BOLA.png";
     import Plumber from "../assets/Plumber.jpg";
     import Cogito from "../assets/Cogito.webp"
+    import Header from "../Component/Header"
+    import ME from "../assets/backgroundImg.jpg"
+    
 
     function ProjectPage() {
       // Component logic and state management can go here
       return (
+        <div class="  mt-0 bg-slate-100 ">
+          <Header
+          />
+        
+        
         <div class=" mb-8  bg-slate-100 ">
-        <h1 class="text-center mb-8 font-bold ">My Project</h1>
+          
+        <h1 class="text-center mb-8 font-bold text-2xl lg:text-4xl md:text-4xl ">My Project</h1>
         
         <div
         
@@ -77,20 +86,35 @@
           </div>
           
         </div>
-        <div class="lg:flex lg:gap-24 mt-10 flex-col flex bg-stone-50 lg:flex-row bg-slate-100 
+        <div class="lg:flex lg:gap-24 mt-10 flex-col flex pb-16 lg:flex-row bg-slate-100 
          lg: gap-24 md: flex md: flex-col ">
           <div
             className=" outline-2 outline-slate-100 shadow-lg shadow-[#0E0AE6]
            transition-transform duration-300 ease-in-out transform hover:scale-105 
            hover:shadow-2x lgw-[400px] h-96 lg:ml-[500px] mx-auto justify-center bg-slate-100
-           md:w-[400px] md:ml-24 w-84  "
+           md:w-[400px] md:ml-24 w-84 "
+
+           style={{
+           backgroundImage: `url(${ME})`,
+           backgroundSize: 'cover',
+           backgroundRepeat: 'no-repeat',
+           backdropFilter:"blur(10px)",
+           }} 
           >
-            <div class ="text-center align-center">
-            <img src={BOLA} alt="profile picture" className=" mt-24  w-14 h-14" />
+            <div class ="flex justify-center pt-8">
+            <img src={BOLA} alt="profile picture" className="   w-14 h-14" />
             <p className="font-semibold font-serif text-amber-700 italic text-4xl  ">
               olanle
             </p>
+            
             </div>
+             <div class="mt-52 text-center bg-slate-200 h-28 ">
+              <h6 class="text-lg mb-6">An online platform that connect Artisan with customers</h6>
+            <a href ="https://psigroup-intellectsams-projects.vercel.app/" 
+            target="_blank"rel="noopener noreferrer" class="" >
+            Click to check Mi-Artisan</a>
+          
+          </div>
           </div>
          { /*<div
             class=" outline-2 outline-emerald-950 shadow-lg shadow-[#0E0AE6]
@@ -99,6 +123,7 @@
           >
             Cogito
           </div> */}
+        </div>
         </div>
         </div>
       
