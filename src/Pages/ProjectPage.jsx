@@ -103,7 +103,7 @@
           >
             <div class ="flex justify-center pt-8">
             <img src={BOLA} alt="profile picture" className="   w-14 h-14" />
-            <p className="font-semibold font-serif text-amber-700 italic text-4xl  ">
+            <p className="font-semibold font-serif text-amber-700 text-4xl  ">
               olanle
             </p>
             

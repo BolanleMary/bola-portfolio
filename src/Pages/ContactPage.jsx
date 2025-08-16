@@ -11,9 +11,10 @@ function Contact() {
   }
   return (
     <section id='contact'>
-    <div className="flex justify-center items-center min-h-screen bg-slate-200">
-      <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-4 text-center">Get in Touch</h2>
+      <p className='bg-slate-200 flex  justify-between text-center '>Contact us</p>
+          <div className="flex justify-center items-center min-h-screen bg-slate-200">
+                  <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-md">
+        <h2 className="text-2xl font-bold mb-4 text-center">Fill the form</h2>
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">
             Name   
