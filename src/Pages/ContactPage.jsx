@@ -2,6 +2,7 @@
 // For more help visit https://formspr.ee/react-help
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import ScrollFadeIn from '../Component/ScrollFadeIn';
 
 function Contact() {
   const [state, handleSubmit] = useForm("xzzvvqzw");
@@ -11,8 +12,10 @@ function Contact() {
   }
   return (
     <section id='contact'>
-      <p className='bg-slate-200 flex  justify-between text-center '>Contact us</p>
-          <div className="flex justify-center items-center min-h-screen bg-slate-200">
+      
+      <p className='bg-slate-200  text-center text-4xl p-4 '>Contact us</p>
+                <div className="flex justify-center items-center lg:min-h-screen bg-slate-200">
+            <ScrollFadeIn className="w-full block max-w-md lg:p-0 p-4">
                   <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-md">
         <h2 className="text-2xl font-bold mb-4 text-center">Fill the form</h2>
         <div className="mb-4">
@@ -80,9 +83,10 @@ function Contact() {
             {state.submitting ? 'Submitting...' : 'Submit'}
           </button>
         </div>
-      </form>
+        </form>
+        </ScrollFadeIn>
     </div>
-    </section>
+        </section>
   );
 }
 

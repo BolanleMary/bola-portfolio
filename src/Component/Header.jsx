@@ -95,7 +95,7 @@ function Header() {
             
             
             <Link to="/contact">
-            <div className="flex gap-1 items-center hover:scale-200">
+            <div className="flex gap-1 items-center OnClick:text-amber-200">
               <img src={ EmailIcon } alt="Project Icon" className="w-7 h-7" />
               <li>Contact</li>
             </div>

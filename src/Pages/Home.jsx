@@ -10,6 +10,7 @@ import AboutIcon from "../assets/AboutIcon.png";
 import ProjectIcon from "../assets/ProjectIcon.png";
 import EmailIcon from "../assets/EmailIcon.png";
 import { Link } from 'react-router-dom';
+import ScrollFadeIn from '../Component/ScrollFadeIn';
 
 
 
@@ -79,7 +80,7 @@ const scrollToSection =(id) =>{
         inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}">
       <head>
-        <title> My portfolio</title>
+        <title>Bolanle Portfolio</title>
       </head>
       {/*bg-linear-to-bl from-blue-200 to-blue-400*/}
 
@@ -87,7 +88,7 @@ const scrollToSection =(id) =>{
      <header className="text-slate-800 mr-6 flex items-center justify-between mt-8 pl-4 sticky z-[20] mx-auto">
           <Link to="/"><div className="pl-4 flex">
              <img src={BOLA} alt="profile picture" className="w-14 h-14" />
-             <p className="font-semibold font-serif text-amber-700 italic text-4xl">
+             <p className="font-semibold font-serif text-amber-700  text-4xl">
                olanle
              </p>
            </div>
@@ -157,9 +158,16 @@ const scrollToSection =(id) =>{
                  </button>
                 
                  <Link to="/project">
-                 <div className="flex gap-1 items-center onclick:text-amber-200">
+                 <div className="flex gap-1 items-center Onclick:text-amber-200">
                    <img src={ProjectIcon} alt="Project Icon" className="w-7 h-7" />
                          <li>Projects</li>
+                 </div>
+                 </Link>
+
+                 <Link to="/resumee">
+                 <div className="flex gap-1 items-center Onclick:text-amber-200">
+                   <img src={ProjectIcon} alt="Project Icon" className="w-7 h-7" />
+                         <li>Resume</li>
                  </div>
                  </Link>
                  
@@ -206,19 +214,21 @@ const scrollToSection =(id) =>{
           <h2>welcome to my website</h2>
           <h2 className=" text-2xl"> I'm Olowookere Bolanle Mary</h2>
           <p class="text-3xl"></p>
-          <p class="w-80 ">
+          <p class="w-80 p-2 ">
             A passionate{" "}
             <span className="font-extrabold "> frontend developer</span> , ready
             to tune up and build exceptional website that exceed your
             expectation.
           </p>
+          <ScrollFadeIn>
           <button
             class="bg-gradient-to-r from-black to-slate-700 shadow-lg shadow-black
-             text-blue-200 w-52 mt-12 hover:scale-105 "
+             text-blue-200 w-62 py-2 mt-12 hover:scale-105 text-lg rounded-full "
           >
             {" "}
             See Portfolio!
           </button>
+          </ScrollFadeIn>
         </div>
         {/*About email popup*/}
         <div
@@ -242,12 +252,16 @@ const scrollToSection =(id) =>{
       
 
       {/*About me page*/}
+      
       <div>
       <AboutMe/>
       </div>
       
+      
       {/*CONTACT page*/}
+      
       <Contact/>
+      
      
       
         <footer>
