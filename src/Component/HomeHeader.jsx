@@ -13,7 +13,7 @@ const scrollToSection =(id) =>{
       }
     };
   return (
-<header className="text-slate-800 mr-6 flex items-center justify-between mt-8 lg:pl-4 lg:pr-6 sticky z-[20] mx-auto">
+<header className="text-slate-800 mr-6 flex items-center justify-between mt-8 lg:gpl-4 lg:pr-6 sticky z-[20] mx-auto">
           <Link to="/"><div className="pl-4 flex">
              <img src={BOLA} alt="profile picture" className="w-14 h-14" />
              <p className="font-semibold font-serif text-amber-700  text-4xl">
