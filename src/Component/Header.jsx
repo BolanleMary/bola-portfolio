@@ -1,18 +1,12 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import BOLA from "../assets/BOLA.png"
-import HomeIcon from "../assets/HomeIcon.png";
 import AboutIcon from "../assets/AboutIcon.png";
 import ProjectIcon from "../assets/ProjectIcon.png";
 import EmailIcon from "../assets/EmailIcon.png";
 
 function Header() {
-  const scrollToSection =(id) =>{
-      const section =document.getElementById(id);
-      if (section){
-        section.scrollIntoView({behavior:"smooth"});
-      }
-    };
+  
     return(
     <header className="text-slate-800 mr-6 flex items-center justify-between mt-8 pl-4 sticky z-[20] mx-auto">
      <Link to="/"><div className="pl-4 ] flex">
@@ -28,7 +22,7 @@ function Header() {
         <button
           id="hamburger-button"
           className="lg:hidden flex flex-col justify-center items-center w-10 h-10 bg-white border border-gray-200 rounded"
-          // Add this code inside your onClick event handler
+         
     onClick={() => {
       // Toggle menu open/close state
       document.getElementById("nav-menu").classList.toggle("hidden");
@@ -69,22 +63,14 @@ function Header() {
           className="hidden lg:flex lg:flex-row flex-col absolute lg:relative right-0 top-12 lg:top-0 bg-white lg:bg-transparent shadow-md lg:shadow-none w-40 lg:w-auto p-4 lg:p-0"
         >
           <ul className="flex lg:flex-row flex-col gap-4 lg:gap-16 items-start lg:items-center">
-           {/* <Link to="/">
-            <div className="flex gap-1 items-center">
-                <img
-                src={HomeIcon}
-                alt="Home Icon"
-                className="hover:w-10 hover:h-10 w-7 h-7"
-              />
-              <li className="hover:text-[#000]">Home</li>
-            </div>
-            </Link>*/}
+           
             
-            <button className="flex gap-1 items-center"
-            onClick={() => scrollToSection("about") } >
+            <Link to="/about">
+            <div className="flex gap-1 items-center OnClick:text-amber-200">
               <img src={AboutIcon} alt="Home Icon" className="w-7 h-7" />
               <li>About</li>
-            </button>
+              </div>
+            </Link>
            
             <Link to="/project">
             <div className="flex gap-1 items-center onclick:text-amber-200">
@@ -92,6 +78,13 @@ function Header() {
                     <li>Projects</li>
             </div>
             </Link>
+            <Link to="/resume">
+                             <div className="flex gap-1 items-center Onclick:text-amber-200">
+                               <img src={ProjectIcon} alt="Project Icon" className="w-7 h-7" />
+                                     <li>Resume</li>
+                             </div>
+                             </Link>
+
             
             
             <Link to="/contact">
