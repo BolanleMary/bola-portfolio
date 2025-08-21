@@ -7,6 +7,7 @@
     import Cogito from "../assets/Cogito.webp"
     import Header from "../Component/Header"
     import ME from "../assets/backgroundImg.jpg"
+    import Footer from "./Footer"
     
 
     function ProjectPage() {
@@ -17,53 +18,19 @@
           />
         
         
-        <div class=" mb-8  bg-slate-100 ">
+        <div class="  mb-20   bg-slate-100 p-8">
           
-        <h1 class="text-center mb-8 font-bold text-2xl lg:text-4xl md:text-4xl ">My Project</h1>
+        <h1 class="text-center mb-8 font-bold text-2xl lg:text-5xl md:text-4xl ">My Projects</h1>
         
         <div
-        
-        class=" lg:flex lg:gap-20 mt-10 flex-col flex  lg:flex-row  lg: gap-20 md: flex md: flex-col
-        md:items-center md:justify-center ">
-          <div 
-          class=" outline-2 outline-slate-100 shadow-lg shadow-[#0E0AE6]
-           transition-transform duration-300 ease-in-out transform hover:scale-105 
-           hover:shadow-2x lg:w-[400px] h-96 lg:ml-24 mx-auto justify-center 
-           bg-slate-100 md:w-[400px] md:ml-24 w-84 
-
-            "
-           style={{
-           backgroundImage: `url(${Plumber})`,
-           backgroundSize: 'cover',
-           backgroundRepeat: 'no-repeat',
-           backdropFilter:"blur(10px)",
-           }}
-           >
-          <div
-            class=" flex gap-2 text-3xl "
-          >
-            <img
-              src={LogoImage}
-              alt="Mi Artisan Logo"
-              class=" ml-32 mt-4 my-2 md:w-12 md:h-12 w-16 h-16"
-            />
-            <p class="font-semibold text-2xl  lg:text-3xl mt-6">MI ARTISAN</p>
-            
-            </div>
-            <div class="mt-52 text-center bg-slate-200 h-26 ">
-              <h6 class="text-lg mb-6">we connect customers to Artisan closest to them </h6>
-            <a href ="https://psigroup-intellectsams-projects.vercel.app/" 
-            target="_blank"rel="noopener noreferrer" class="" >
-            Click to check Mi-Artisan</a>
-          
-          </div>
-                     </div>
-          
-          <div
+         
+        class=" lg:flex   flex-col flex   lg:flex-row   md: flex md: flex-col lg:gap-0 gap-20 lg:mt-20
+         ">
+           <div
             class=" outline-2 outline-slate-100 shadow-lg shadow-[#0E0AE6]
            transition-transform duration-300 ease-in-out transform hover:scale-105 
-           hover:shadow-2x lg:w-[400px] h-96 lg:ml-24 mx-auto justify-center bg-slate-100 
-           md:w-[400px] md:ml-24 w-84"
+           hover:shadow-2x lg:w-[400px] lg:h-96  mx-auto justify-center bg-slate-100 
+           md:w-[400px] w-84 md:w-[500px]"
            style={{
            backgroundImage: `url(${Cogito})`,
            backgroundSize: 'cover',
@@ -80,19 +47,45 @@
               <h6 class="text-lg mb-6">An online platform that connect Artisan with customers</h6>
             <a href ="https://psigroup-intellectsams-projects.vercel.app/" 
             target="_blank"rel="noopener noreferrer" class="" >
-            Click to check Mi-Artisan</a>
+            Cogito is an internal app</a>
           
+          </div>
+          </div>          
+          <div
+            class=" outline-2 outline-slate-100 shadow-lg shadow-[#0E0AE6]
+           transition-transform duration-300 ease-in-out transform hover:scale-105 
+           hover:shadow-2x lg:w-[400px] lg:h-[390px]  mx-auto justify-center bg-slate-100 
+           md:w-[400px] md:w-[500px] w-92"
+           style={{
+           backgroundImage: `url(${Plumber})`,
+           backgroundSize: 'cover',
+           backgroundRepeat: 'no-repeat',
+           backdropFilter:"blur(10px)",
+           }}
+          >
+            <div class="flex gap-2 text-3xl item-center text-center">
+            <img
+              src={LogoImage}
+              alt="Mi Artisan"
+              class=" ml-32 mt-4 my-2 md:w-12 md:h-12 w-16 h-16"
+            />
+            <p class="font-semibold text-2xl lg:text-3xl mt-6"> MI ARTISAN</p>
+            </div>
+            <div class="mt-52 text-center bg-slate-200 h-28 ">
+              <button>
+              <h6 class="text-lg mb-6">An online platform that connect Artisan with customers</h6>
+            <a href ="https://psigroup-intellectsams-projects.vercel.app/" 
+            target="_blank"rel="noopener noreferrer" class="" >
+            Click to check</a>
+          </button>
           </div>
           </div>
           
-        </div>
-        <div class="lg:flex lg:gap-24 mt-10 flex-col flex pb-16 lg:flex-row bg-slate-100 
-         lg: gap-24 md: flex md: flex-col ">
           <div
             className=" outline-2 outline-slate-100 shadow-lg shadow-[#0E0AE6]
            transition-transform duration-300 ease-in-out transform hover:scale-105 
-           hover:shadow-2x lgw-[400px] h-96 lg:ml-[500px] mx-auto justify-center bg-slate-100
-           md:w-[400px] md:ml-24 w-84 "
+           hover:shadow-2x lg:w-[400px] lg:h-[406px]  mx-auto justify-center bg-slate-100
+           md:w-[400px] md:w-[500px] md:h-[500px]  w-84 "
 
            style={{
            backgroundImage: `url(${ME})`,
@@ -108,23 +101,25 @@
             </p>
             
             </div>
-             <div class="mt-52 text-center bg-slate-200 h-28 ">
-              <h6 class="text-lg mb-6">An online platform that connect Artisan with customers</h6>
-            <a href ="https://psigroup-intellectsams-projects.vercel.app/" 
+             <div class="lg:mt-52 md:mt-76 mt-52 text-center bg-slate-200 h-28 ">
+              <h6 class="text-lg mb-6">My personal website portfolio to showcase my skills and 
+                experiences
+              </h6>
+              <button>
+            <a href ="https://bolanlemary.netlify.app/" 
             target="_blank"rel="noopener noreferrer" class="" >
-            Click to check Mi-Artisan</a>
-          
+            Click to go back to home page</a>
+          </button>
+       
           </div>
-          </div>
-         { /*<div
-            class=" outline-2 outline-emerald-950 shadow-lg shadow-[#0E0AE6]
-           transition-transform duration-300 ease-in-out transform hover:scale-105
-            hover:shadow-2x w-[500px] h-64 flex gap-2 text-3xl "
-          >
-            Cogito
-          </div> */}
+         
         </div>
         </div>
+              
+        </div>
+        <>
+        <Footer/>
+        </>
         </div>
       
       );
