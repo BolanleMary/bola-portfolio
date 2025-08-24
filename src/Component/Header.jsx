@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import BOLA from "../assets/BOLA.png"
 import AboutIcon from "../assets/AboutIcon.png";
 import ProjectIcon from "../assets/ProjectIcon.png";
+import ResumeIcon from "../assets/ResumeIcon.png"
 import EmailIcon from "../assets/EmailIcon.png";
 
 function Header() {
@@ -75,12 +76,12 @@ function Header() {
             <Link to="/project">
             <div className="flex gap-1 items-center onclick:text-amber-200">
               <img src={ProjectIcon} alt="Project Icon" className="w-7 h-7" />
-                    <li>Projects</li>
+                    <li  class="text-amber-700 text-extrabold">Projects</li>
             </div>
             </Link>
             <Link to="/resume">
-                             <div className="flex gap-1 items-center Onclick:text-amber-200">
-                               <img src={ProjectIcon} alt="Project Icon" className="w-7 h-7" />
+                             <div className="flex gap-1 items-center ">
+                               <img src={ResumeIcon} alt="Project Icon" className="w-7 h-7 " />
                                      <li>Resume</li>
                              </div>
                              </Link>

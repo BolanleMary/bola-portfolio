@@ -2,6 +2,7 @@ import React, { } from "react";
 import BOLA from "../assets/BOLA.png"
 import AboutIcon from "../assets/AboutIcon.png";
 import ProjectIcon from "../assets/ProjectIcon.png";
+import ResumeIcon from "../assets/ResumeIcon.png"
 import EmailIcon from "../assets/EmailIcon.png";
 import { Link } from 'react-router-dom';
 
@@ -26,7 +27,8 @@ const scrollToSection =(id) =>{
              {/* Hamburger menu for smaller screens */}
              <button
                id="hamburger-button"
-               className="lg:hidden flex flex-col justify-center items-center w-10 h-10 bg-white border border-gray-200 rounded"
+               className="lg:hidden flex flex-col justify-center
+                items-center w-10 h-10 bg-white border border-gray-200 rounded"
                // Add this code inside your onClick event handler
          onClick={() => {
            // Toggle menu open/close state
@@ -85,7 +87,7 @@ const scrollToSection =(id) =>{
 
                  <Link to="/resume">
                  <div className="flex gap-1 items-center Onclick:text-amber-200">
-                   <img src={ProjectIcon} alt="Project Icon" className="w-7 h-7" />
+                   <img src={ResumeIcon} alt="Project Icon" className="w-7 h-7" />
                          <li>Resume</li>
                  </div>
                  </Link>
