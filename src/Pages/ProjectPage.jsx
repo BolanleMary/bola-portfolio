@@ -26,24 +26,16 @@
         
         <div
          
-        class=" lg:flex   flex-col flex   lg:flex-row   md: flex md: flex-col lg:gap-12 gap-20 lg:mt-20
+        class=" lg:flex flex-col flex lg:flex-row md:flex md: flex-col lg:gap-12 gap-20 
+        lg:mt-20
          ">
           <ScrollFadeIn>
            <div
             class=" outline-2 outline-slate-100 shadow-lg shadow-[#0E0AE6]
            transition-transform duration-300 ease-in-out transform hover:scale-105 
            hover:shadow-2x lg:w-[400px] lg:h-96  mx-auto justify-center bg-slate-200 
-           md:w-[400px] w-78 md:w-[500px] mr-18  ">
-           
-           
-        { /* style={{
-           backgroundImage: `url(${Cogito})`,
-           backgroundSize: 'cover',
-           backgroundRepeat: 'no-repeat',
-           backdropFilter:"blur(10px)",
-           
-              }}*/ }
-             
+           md:w-[400px] w-78 md:w-[500px]   ">
+
           
             <img
             src={Cogito}
