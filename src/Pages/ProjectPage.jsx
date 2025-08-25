@@ -33,7 +33,7 @@
             class=" outline-2 outline-slate-100 shadow-lg shadow-[#0E0AE6]
            transition-transform duration-300 ease-in-out transform hover:scale-105 
            hover:shadow-2x lg:w-[400px] lg:h-96  mx-auto justify-center bg-slate-200 
-           md:w-[400px] w-84 md:w-[500px]  ">
+           md:w-[400px] w-78 md:w-[500px] mr-18  ">
            
            
         { /* style={{
@@ -57,7 +57,7 @@
             />
             </div>
             <div class=" text-center bg-slate-200 h-24 ">
-              <h6 class="text-lg pb-2 lg:pb-5">An online platform for management, enhancing safety and work flow efficiency</h6>
+              <h6 class=" pb-2 lg:pb-5">An online platform for management, enhancing safety and work flow efficiency</h6>
             <a href ="https://psigroup-intellectsams-projects.vercel.app/" 
             target="_blank"rel="noopener noreferrer" class="pt-8" >
             Cogito is an internal app</a>
@@ -70,7 +70,7 @@
             class=" outline-2 outline-slate-100 shadow-lg shadow-[#0E0AE6]
            transition-transform duration-300 ease-in-out transform hover:scale-105 
            hover:shadow-2x lg:w-[400px] lg:h-96  mx-auto justify-center bg-slate-200 
-           md:w-[400px] md:w-[500px] w-84  ">
+           md:w-[400px] md:w-[500px] w-78  ">
             
             <img
             src={Plumber}
@@ -101,7 +101,7 @@
             className=" outline-2 outline-slate-100 shadow-lg shadow-[#0E0AE6]
            transition-transform duration-300 ease-in-out transform hover:scale-105 
            hover:shadow-2x lg:w-[400px] lg:h-[400px]  mx-auto justify-center bg-slate-200
-           md:w-[400px] md:w-[500px]   w-84 ">
+           md:w-[400px] md:w-[500px]   w-78 ">
 
            <img
             src={AboutMe}
